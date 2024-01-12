@@ -21,6 +21,7 @@ def get_secret():
     return get_secret_value_response['SecretString']['fgc-rs-bot-pub-key']
 
 def lambda_handler(event, context):
+    print(event)
     try:
         e_body = event['body']
         body = json_loads(e_body)
@@ -37,7 +38,8 @@ def lambda_handler(event, context):
 
         # Check type
         return type_check(t, body)
-    except:
+    except Exception as e:
+        print(e)
         return return_format(500, 'Server Error')
 
 def return_format(status_code, body):
