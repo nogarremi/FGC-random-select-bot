@@ -1,19 +1,16 @@
 # Local imports
-from commands import commands, challonge, edit # Bring in all commands
-from commands.utilities import (get_callbacks, read_db, stat_up, read_disable) # Bring in some utilities to help the process
-from secret import dev_ids, dev_guild
+from commands import commands # Bring in all commands
+from commands.utilities import get_callbacks # Bring in some utilities to help the process
 
 # Yaksha
 class Interface():
 
     # Yaksha
     # Initialize Interface with all our nice defaults
-    def __init__(self, admin_commands, dev_commands, help):
+    def __init__(self, help):
         self._func_mapping = {} # Map for future reference
-        self._modules = [commands, challonge, edit] # Stores the reference to each .py we have command functions in
+        self._modules = [commands] # Stores the reference to each .py we have command functions in
         self.remap_functions() # Map functions for reference by command name
-        self.admin_commands = admin_commands # Bring over the admin commands
-        self.dev_commands = dev_commands # Bring over the dev commands
         self.help = help # Bring over help info
 
     # Yaksha
@@ -55,57 +52,11 @@ class Interface():
         Determines which function to call from the func_mapping
         dict using the command arg as the key.
         '''
-        # First check if the command is disabled
-        if self._func_mapping[command].__name__ in read_disable(kwargs['guild']):
-            return "**{0}** has been disabled in this server.".format(command)
+        # Try to complete the command's function
+        try:
+            result = await self._func_mapping[command](command, msg, user, channel, *args, **kwargs)
 
-        # Second check if the user is allowed to call this
-        # function.
-        if await self.user_has_permission(user, command, kwargs['guild']):
-            # Keyword args that could be deferred until now
-            if self._func_mapping[command].__name__ == 'help_lizard':
-                kwargs['help'] = self.help
-            elif self._func_mapping[command].__name__ in ['disable','enable','stats']:
-                kwargs['func_map'] = self._func_mapping
+            return result
+        except:
+            raise # Re-raise same error
 
-            # Try to complete the command's function
-            try:
-                result = await self._func_mapping[command](command, msg, user, channel, *args, **kwargs)
-                stat_up(self._func_mapping[command].__name__) # Increment command's stat after it is successful
-                return result
-            except:
-                raise # Re-raise same error
-        else:
-            # No permission
-            return "You do not have permissions to access the command: " + command
-
-    async def user_has_permission(self, user, command, id):
-        '''
-        Performs various checks on the user and the
-        command to determine if they're allowed to use it.
-        '''
-        
-        # Check if the user is an admin and
-        # if the command is an admin command.
-        if command in self.admin_commands:
-            botrole = read_db('guild', 'botrole', id)
-
-            # If botrole is not set, allow the command
-            if not botrole:
-                return True
-
-            # Find if the user has botrole
-            for role in user.roles:
-                if role.id == botrole:
-                    return True
-            return False
-        # Check if the command is a dev command 
-        elif command in self.dev_commands:
-            # If the user is a dev and that the command was sent from the proper server, give access to the dev commands
-            if user.id in dev_ids and id in dev_guild:
-                return True
-            return False
-
-        # User passed all the tests so they're allowed to
-        # call the function.
-        return True
