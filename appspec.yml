@@ -1,0 +1,14 @@
+{
+ 	"version": 0.0,
+ 	"Resources": [{
+ 		"discord-fgc-rs-bot-lambda": {
+ 			"Type": "AWS::Lambda::Function",
+ 			"Properties": {
+ 				"Name": "discord-fgc-rs-bot",
+ 				"Alias": "myLambdaFunctionAlias",
+ 				"CurrentVersion": "1",
+ 				"TargetVersion": "1"
+ 			}
+ 		}
+ 	}]
+ }
