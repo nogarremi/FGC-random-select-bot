@@ -1,14 +1,18 @@
 version: 0.2
 
 phases:
+  pre-build:
+    commands:
+      - echo Pre-Build starting at `date`
+      - pip install --upgrade pip
   build:
     commands:
-      - echo Build starting on `date`
-      - pip install -r requirements.txt
+      - echo Build starting at `date`
+      - pip install --target ./package pynacl
       - cd src/
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo Build completed at `date`
 artifacts:
   files:
     - fgc-rs-bot.zip
