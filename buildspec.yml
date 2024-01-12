@@ -16,8 +16,7 @@ phases:
       - pip install --target ./ pynacl boto3 requests
       - zip -r fgc-rs-bot.zip .
       - aws lambda update-function-code --region=us-west-2 --function-name discord-fgc-rs-bot --zip-file fileb://fgc-rs-bot.zip
-      - ls -al
-      - cat commands_reg.py
+      - python command_reg.py
   post_build:
     commands:
       - echo Build completed at `date`
