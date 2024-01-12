@@ -4,7 +4,8 @@ from os import path as os_path
 from nacl.signing import VerifyKey
 from nacl.exceptions import BadSignatureError
 
-from utils import get_secret
+from boto3 import session as boto_session
+from botocore import ClientError
 
 rs_info = json_load(open(os_path.join(os_path.dirname(__file__), 'rs.json')))
 
@@ -45,6 +46,17 @@ commands = {
         ]
     }
 }
+
+def get_secret(key):
+    session = boto_session.Session()
+    client = session.client(service_name='secretsmanager', region_name="us-west-2")
+
+    try:
+        get_secret_value_response = client.get_secret_value(SecretId="Discord-FGC-RS-Bot")
+    except Exception as e:
+        raise e
+
+    return json_loads(get_secret_value_response['SecretString'])[key]
 
 def lambda_handler(event, context):
     print(event)
