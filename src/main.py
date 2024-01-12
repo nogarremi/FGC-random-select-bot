@@ -49,7 +49,7 @@ def return_format(status_code, body):
     }
 
 def validate(timestamp, signature, e_body):
-    verify_key = VerifyKey(bytes.fromhex(PUBLIC_KEY))
+    verify_key = VerifyKey(bytes.fromhex(get_secret()))
     message = f"{timestamp}{e_body}".encode()
 
     try:
