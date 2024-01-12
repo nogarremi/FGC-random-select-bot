@@ -10,8 +10,8 @@ from nacl.exceptions import BadSignatureError
 from command_list import commands
 
 def get_secret():
-    my_session = session.Session()
-    client = my_session.client(service_name='secretsmanager',region_name="us-west-1")
+    session = boto_session.Session()
+    client = session.client(service_name='secretsmanager',region_name="us-west-1")
 
     try:
         get_secret_value_response = client.get_secret_value(SecretId="Discord-FGC-RS-Bot")
