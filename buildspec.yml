@@ -7,6 +7,7 @@ phases:
   pre_build:
     commands:
       - echo Pre-Build starting at `date`
+      - yum install -y awscli jq
       - pip install --upgrade pip
   build:
     commands:
@@ -14,6 +15,11 @@ phases:
       - mkdir build
       - cd src/
       - pip install --target ./ pynacl boto3
+      - curVer=$(aws lambda get-alias --function-name discord-fgc-rs-bot --name deployStart | jq '.FunctionVersion' | tr -d '"')
+      - newVer=$(echo $curVer | awk '{print $0+1}' -)
+      - echo "curVer: ${curVer} | newVer: ${newVer}"
+      - sed -i "s/%currentVer%/${curVer}/g" appspec.yml
+      - sed -i "s/%targetVer%/${newVer}/g" appspec.yml
   post_build:
     commands:
       - echo Build completed at `date`
