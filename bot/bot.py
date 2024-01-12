@@ -10,9 +10,12 @@ from sys import exc_info as sys_exc_info # For grabbing error information
 import interface # The selector between bot.py and commands
 from secret import token # Discord token
 
+intents = discord.Intents.default()
+intents.message_content = True
+
 # Create the Discord client
 client = discord.Client(
-    intents=discord.Intents.default()
+    intents=intents
 )
 
 # Once bot is fully logged in, print the guilds it is in
@@ -43,7 +46,7 @@ async def on_message(message):
             return
         # Check if the attempted_cmd takes arguments
         elif message.content.split(' ')[0][1:].lower() in client.no_arg_cmds and len(message.content.split()) > 1:
-            await message.channel.send("Too many arguments. Check help-lizard for more info")
+            await message.channel.send("Too many arguments. Check !fgc-rs-help for more info")
             return
 
         # Rotate through commands to see if the message matches
@@ -88,6 +91,7 @@ async def on_message(message):
 # Yaksha
 # Main thread the kicks off the initial setup and starts the bot
 def main():
+    print(token)
     client.commands, client.no_arg_cmds = [], [] # Init
     client.help = {} # Init
 

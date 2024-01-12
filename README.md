@@ -6,7 +6,7 @@ Simple discord bot that uses the rs.json file to pick a random character for a s
 
 # How to Use
 
-In order to get started, you need to invite FGC Random Select Bot to the discord server you wish to use it in.  [Invite link here.](INSERT_LINK_HERE)
+In order to get started, you need to invite FGC Random Select Bot to the discord server you wish to use it in.  [Invite link here.](https://discord.com/api/oauth2/authorize?client_id=1195150675139637248&permissions=67584&scope=bot)
 
 ## General commands
 
