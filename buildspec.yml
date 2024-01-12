@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Build starting on `date`
+      - pip install -r requirements.txt
+      - cd src/
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - fgc-rs-bot.zip
