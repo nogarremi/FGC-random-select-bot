@@ -13,10 +13,11 @@ phases:
       - echo Build starting at `date`
       - mkdir build
       - cd src/
-      - pip install --target ./ pynacl boto3
+      - pip install --target ./ pynacl boto3 requests
       - zip -r fgc-rs-bot.zip .
       - aws lambda update-function-code --region=us-west-2 --function-name discord-fgc-rs-bot --zip-file fileb://fgc-rs-bot.zip
-      - python commands_reg.py
+      - ls -al
+      - cat commands_reg.py
   post_build:
     commands:
       - echo Build completed at `date`
