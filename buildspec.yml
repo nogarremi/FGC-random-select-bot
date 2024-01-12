@@ -14,13 +14,9 @@ phases:
       - mkdir build
       - cd src/
       - pip install --target ./ pynacl boto3
-      - curVer=$(aws lambda get-alias --function-name discord-fgc-rs-bot --name deployStart | jq '.FunctionVersion' | tr -d '"')
-      - echo "curVer ${curVer}"
-      - newVer=$(echo "${curVer}" | awk '{print $0+1}' -)
-      - echo "newVer ${newVer}"
-      - echo "curVer ${curVer} | newVer ${newVer}"
-      - sed -i "s/%currentVer%/${curVer}/g" appspec.yml
-      - sed -i "s/%targetVer%/${newVer}/g" appspec.yml
+      - zip -r fgc-rs-bot.zip .
+      - aws lambda update-function-code --region=us-west-2 --function-name discord-fgc-rs-bot --zip-file fileb://fgc-rs-bot.zip
+      - aws lambda publish-version --region=us-west-2 --function-name discord-fgc-rs-bot
   post_build:
     commands:
       - echo Build completed at `date`
