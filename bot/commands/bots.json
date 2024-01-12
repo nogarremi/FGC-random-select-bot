@@ -2,7 +2,7 @@
 	"common_commands": {
 		"fgc-rs-github": ["fgc-rs-github", "fgc-rs", "Links to the GitHub repository for FGC-RS-BOT"],
 		"fgc-rs-help": [
-			"help-lizard",
+			"fgc-rs-help",
 			"helpliz",
 			"For more information about the bot and its commands: <https://github.com/nogarremi/fgc-random-select-bot>"
 		],

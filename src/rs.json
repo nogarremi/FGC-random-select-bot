@@ -1,10 +1,14 @@
 {
-	"character": {
-		"footsies": [
-			"Footsies Character",
-			"FOOTSIES Rollback Edition"
+	"footsies": {
+		"name": "Footsies",
+		"characters": [
+			"Footsies Character"
 		],
-		"gbvs": [
+		"last_updated_version": "FOOTSIES Rollback Edition"
+	},
+	"gbvs": {
+		"name": "Granblue Fantasy Versus: Rising",
+		"characters": [
 			"Gran",
 			"Katalina",
 			"Charlotta",
@@ -24,14 +28,17 @@
 			"Belial",
 			"Cagliostro",
 			"Yuel",
-			"Anre",
+			"Anre",	
 			"Eustace",
 			"Seox",
 			"Vira",
-			"Avatar Belial",
-			"Ver as of 1/9/2022"
+			"Avatar Belial"
 		],
-		"mbtl":[
+		"last_updated_version": "Ver as of 1/9/2022"
+	},
+	"mbtl": {
+		"name": "Melty Blood: Type Lumina",
+		"characters": [
 			"Shiki Tohno",
 			"Arcueid Brunestud",
 			"Akiha Tohno",
@@ -51,10 +58,13 @@
 			"Neco-Arc",
 			"Mash Kyrielight",
 			"Ushiwakamaru",
-			"The Count of Monte Cristo",
-			"Ver as of 5/29/2023"
+			"The Count of Monte Cristo"
 		],
-		"llb": [
+		"last_updated_version": "Ver as of 5/29/2023"
+	},
+	"llb": {
+		"name": "Lethal League Blaze",
+		"characters": [
 			"Raptor",
 			"Switch",
 			"Candyman",
@@ -66,10 +76,25 @@
 			"Grid",
 			"Nitro",
 			"Toxic",
-			"Dust and Ashes",
-			"1.26"
+			"Dust and Ashes"
 		],
-		"mk11":[
+		"stages": [
+			"Outskirts",
+			"The Sewers",
+			"Scrap Desert",
+			"New Rise District", 
+			"Workbot Factory",
+			"The Subways",
+			"Paradise Field ",
+			"Central Streets",
+			"Abandoned Pool",
+			"Room 21"
+		],
+		"last_updated_version": "1.26"
+	},
+	"mk11": {
+		"name": "Mortal Kombat 11",
+		"characters": [
 			"Rambo",
 			"Rain",
 			"Mileena",
@@ -106,10 +131,13 @@
 			"Kitana",
 			"Jacqui Briggs",
 			"Liu Kang",
-			"Sindel",
-			"MK11 Ultimate. Pulled from roster page on website."
+			"Sindel"
 		],
-		"samsho": [
+		"last_updated_version": "MK11 Ultimate"
+	},
+	"samsho": {
+		"name": "Samurai Shodown (2021)",
+		"characters": [
 			"Haohmaru",
 			"Nakoruru",
 			"Genjuro Kibagami",
@@ -139,10 +167,13 @@
 			"Gongsun Li",
 			"Hibiki Takane",
 			"Baiken",
-			"Shirou Tokisada Amakusa",
-			"Ver as of 05/29/2023"
+			"Shirou Tokisada Amakusa"
 		],
-		"sfv": [
+		"last_updated_version": "Ver as of 05/29/2023"
+	},
+	"sfv": {
+		"name": "Street Fighter V",
+		"characters": [
 			"Ryu",
 			"Chun-Li",
 			"Nash",
@@ -188,10 +219,13 @@
 			"Rose",
 			"Akira",
 			"Oro",
-			"Luke",
-			"6.061"
+			"Luke"
 		],
-		"sf6": [
+		"last_updated_version": "6.061"
+	},
+	"sf6": {
+		"name": "Street Fighter 6",
+		"characters": [
 			"Ryu",
 			"Luke",
 			"Jamie",
@@ -211,10 +245,13 @@
 			"Lily",
 			"Cammy",
 			"Rashid",
-			"A.K.I",
-			"Fall 2023"
+			"A.K.I"
 		],
-		"strive": [
+		"last_updated_version": "Fall 2023"
+	},
+	"strive": {
+		"name": "Guilty Gear STRIVE",
+		"characters": [
 			"Sol Badguy",
 			"Ky Kiske",
 			"May",
@@ -239,15 +276,18 @@
 			"Sin Kiske",
 			"Bedman?",
 			"Asuka R#",
-			"Johnny",
-			"Version as of 10/4/2023"
+			"Johnny"
 		],
-		"t7": [
+		"last_updated_version": "Version as of 10/4/2023"
+	},
+	"t7": {
+		"name": "Tekken 7",
+		"characters": [
 			"Akuma",
 			"Alisa",
 			"Anna",
 			"Armor King",
-			"Asuka",
+			"Asuka",	
 			"Bob",
 			"Bryan",
 			"Claudio",
@@ -293,123 +333,9 @@
 			"Xiaoyu",
 			"Yoshimitsu",
 			"Zafina",
-			"Lidia",
-			"Season 4 patch 4.1.0"
+			"Lidia"
 		],
-		"uni": [
-			"Akatsuki",
-			"Byakuya",
-			"Carmine",
-			"Chaos",
-			"Eltnum",
-			"Gordeau",
-			"Hilda",
-			"Hyde",
-			"Linne",
-			"Londrekia",
-			"Merkava",
-			"Nanase",
-			"Orie",
-			"Seth",
-			"Vatista",
-			"Waldstein",
-			"Yuzuriha",
-			"clr"
-		],
-		"xrd": [
-			"Answer",
-			"Axl Low",
-			"Baiken",
-			"Bedman",
-			"Chipp Zanuff",
-			"Dizzy",
-			"Elphelt Valentine",
-			"Faust",
-			"I-No",
-			"Jack-O'",
-			"Jam Kuradoberi",
-			"Johnny",
-			"Kum Haehyun",
-			"Ky Kiske",
-			"Leo Whitefang",
-			"May",
-			"Millia Rage",
-			"Potemkin",
-			"Ramlethal Valentine",
-			"Raven",
-			"Sin Kiske",
-			"Slayer",
-			"Sol Badguy",
-			"Venom",
-			"Zato-1",
-			"rev2"
-		],
-		"+r": [
-			"A.B.A",
-			"Anji Mito",
-			"Axl Low",
-			"Baiken",
-			"Bridget",
-			"Chipp Zanuff",
-			"Dizzy",
-			"Eddie",
-			"Faust",
-			"I-No",
-			"Jam Kuradoebri",
-			"Johnny",
-			"Justice",
-			"Kliff Undersn",
-			"Ky Kiske",
-			"May",
-			"Millia Rage",
-			"Order-Sol",
-			"Potemkin",
-			"Robo-Ky",
-			"Slayer",
-			"Sol Badguy",
-			"Testament",
-			"Venom",
-			"Zappa",
-			"Guilty Gear XX Accent Core + R (GGACPR)"
-		],
-		"3s": [
-			"Akuma",
-			"Alex",
-			"Dudley",
-			"Elena",
-			"Hugo Andore",
-			"Ibuki",
-			"Ken",
-			"Necro",
-			"Oro",
-			"Ryu",
-			"Sean Matsuda",
-			"Urien",
-			"Yang Lee",
-			"Yun Lee",
-			"Chun-Li",
-			"Makoto",
-			"Q",
-			"Remy",
-			"Twelve",
-			"3s"
-		]
-	},
-	"stage": {
-		"llb": [
-			"Outskirts",
-			"The Sewers",
-			"Scrap Desert",
-			"New Rise District", 
-			"Workbot Factory",
-			"The Subways",
-			"Paradise Field ",
-			"Central Streets",
-			"Abandoned Pool",
-			"Room 21",
-			"1.26"
-		],
-		"t7": [
+		"stages": [
 			"Abandoned Temple",
 			"Arena",
 			"Artic Snowfall",
@@ -435,8 +361,119 @@
 			"Last Day on Earth",
 			"Cave of Enlightenment",
 			"Vermillion Gates",
-			"Island Paradise",
-			"Season 4 patch 4.1.0. Stages from fandom page"
-		]
+			"Island Paradise"
+		],
+		"last_updated_version": "Season 4 patch 4.1.0"
+	},
+	"uniclr": {
+		"name": "Under Night In-Birth Exe:Late[clr]",
+		"characters": [
+			"Akatsuki",
+			"Byakuya",
+			"Carmine",
+			"Chaos",
+			"Eltnum",
+			"Gordeau",
+			"Hilda",
+			"Hyde",
+			"Linne",
+			"Londrekia",
+			"Merkava",
+			"Nanase",
+			"Orie",
+			"Seth",
+			"Vatista",
+			"Waldstein",
+			"Yuzuriha"
+		],
+		"last_updated_version": "N/A"
+	},
+	"xrd": {
+		"name": "Guilty Gear Xrd Rev 2",
+		"characters": [
+			"Answer",
+			"Axl Low",
+			"Baiken",
+			"Bedman",
+			"Chipp Zanuff",
+			"Dizzy",
+			"Elphelt Valentine",
+			"Faust",
+			"I-No",
+			"Jack-O'",
+			"Jam Kuradoberi",
+			"Johnny",
+			"Kum Haehyun",
+			"Ky Kiske",
+			"Leo Whitefang",
+			"May",
+			"Millia Rage",
+			"Potemkin",
+			"Ramlethal Valentine",
+			"Raven",
+			"Sin Kiske",
+			"Slayer",
+			"Sol Badguy",
+			"Venom",
+			"Zato-1"
+		],
+		"last_updated_version": "Rev 2"
+	},
+	"+r": {
+		"name": "Guilty Gear XX Accent Core Plus R",
+		"characters": [
+			"A.B.A",
+			"Anji Mito",
+			"Axl Low",
+			"Baiken",
+			"Bridget",
+			"Chipp Zanuff",
+			"Dizzy",
+			"Eddie",
+			"Faust",
+			"I-No",
+			"Jam Kuradoebri",
+			"Johnny",
+			"Justice",
+			"Kliff Undersn",
+			"Ky Kiske",
+			"May",
+			"Millia Rage",
+			"Order-Sol",
+			"Potemkin",
+			"Robo-Ky",
+			"Slayer",
+			"Sol Badguy",
+			"Testament",
+			"Venom",
+			"Zappa"
+		],
+		"last_updated_version": "N/A"
+	},
+	"3s": {
+		"name": "Street Fighter 3: Third Strike",
+		"characters": [
+			"Akuma",
+			"Alex",
+			"Dudley",
+			"Elena",
+			"Hugo Andore",
+			"Ibuki",
+			"Ken",
+			"Necro",
+			"Oro",
+			"Ryu",
+			"Sean Matsuda",
+			"Urien",
+			"Yang Lee",
+			"Yun Lee",
+			"Chun-Li",
+			"Makoto",
+			"Q",
+			"Remy",
+			"Twelve"
+		],
+		"last_updated_version": "N/A"
 	}
 }
+
