@@ -7,7 +7,8 @@ phases:
   pre_build:
     commands:
       - echo Pre-Build starting at `date`
-      - yum install -y awscli jq
+      - apt-get upgrade
+      - apt-get install -y awscli jq
       - pip install --upgrade pip
   build:
     commands:
