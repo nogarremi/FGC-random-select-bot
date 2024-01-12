@@ -3,7 +3,7 @@ from requests import put
 
 from utils import get_secrets
 
-def main():
+def reg_commands():
     secrets = get_secrets(['fgc-rs-bot-app-id', 'fgc-rs-bot-server-id', 'fgc-rs-bot-token'])
     APP_ID = secrets['fgc-rs-bot-app-id']
     SERVER_ID = secrets['fgc-rs-bot-server-id']
@@ -16,5 +16,5 @@ def main():
         print(res.json())
 
 if __name__ == "__main__":
-    main()
+    reg_commands()
 
