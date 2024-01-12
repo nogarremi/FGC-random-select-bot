@@ -37,6 +37,8 @@ def lambda_handler(event, context):
 
         # Check type
         return type_check(t, body)
+    except:
+        return return_format(500, 'Server Error')
 
 def return_format(status_code, body):
     return {
