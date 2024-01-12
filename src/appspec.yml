@@ -5,9 +5,9 @@
  			"Type": "AWS::Lambda::Function",
  			"Properties": {
  				"Name": "discord-fgc-rs-bot",
- 				"Alias": "latest",
+ 				"Alias": "deployStart",
  				"CurrentVersion": "1",
- 				"TargetVersion": "1"
+ 				"TargetVersion": "2"
  			}
  		}
  	}]
