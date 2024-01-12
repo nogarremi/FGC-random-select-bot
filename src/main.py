@@ -11,7 +11,7 @@ from command_list import commands
 
 def get_secret():
     session = boto_session.Session()
-    client = session.client(service_name='secretsmanager',region_name="us-west-1")
+    client = session.client(service_name='secretsmanager',region_name="us-west-2")
 
     try:
         get_secret_value_response = client.get_secret_value(SecretId="Discord-FGC-RS-Bot")
