@@ -1,27 +1,54 @@
 from json import loads as json_loads, dumps as json_dumps, load as json_load
 from os import path as os_path
-from boto3 import session as boto_session
-from botocore.exceptions import ClientError
 
 from nacl.signing import VerifyKey
 from nacl.exceptions import BadSignatureError
 
-# Local Imports
-from command_list import commands
+from utils import get_secret
 
-def get_secret():
-    session = boto_session.Session()
-    client = session.client(service_name='secretsmanager',region_name="us-west-2")
+rs_info = json_load(open(os_path.join(os_path.dirname(__file__), 'rs.json')))
 
-    try:
-        get_secret_value_response = client.get_secret_value(SecretId="Discord-FGC-RS-Bot")
-    except ClientError as e:
-        raise e
+valid_char_games = [{"name": game_info['name'], "value":game_id} for game_id, game_info in rs_info.items() if "characters" in game_info]
+valid_stage_games = [{"name": game_info['name'], "value":game_id} for game_id, game_info in rs_info.items() if "stages" in game_info]
 
-    return json_loads(get_secret_value_response['SecretString'])['fgc-rs-bot-pub-key']
+commands = {
+    "fgc-rs-github": {
+        "name": "fgc-rs-github",
+        "description": "Show FGC-RS-Bot's GitHub page",
+        "type": 1,
+        "options": []
+    },
+    "fgc-rs-ping": {
+        "name": "fgc-rs-ping",
+        "description": "Check if bot is online",
+        "type": 1,
+        "options": []
+    },
+    "randomselect": {
+        "name": "randomselect",
+        "description": "Return a randomly selected character/stage",
+        "type": 1,
+        "dm_permission": False,
+        "options": [
+            {
+                "type": 1,
+                "name": "characters",
+                "description": "Get a random character",
+                "choices": valid_char_games
+            },
+            {
+                "type": 1,
+                "name": "stages",
+                "description": "Get a random stage",
+                "choices": valid_stage_games
+            }
+        ]
+    }
+}
 
 def lambda_handler(event, context):
     print(event)
+    print(commands)
     try:
         e_body = event['body']
         body = json_loads(e_body)
@@ -49,7 +76,7 @@ def return_format(status_code, body):
     }
 
 def validate(timestamp, signature, e_body):
-    verify_key = VerifyKey(bytes.fromhex(get_secret()))
+    verify_key = VerifyKey(bytes.fromhex(get_secret('fgc-rs-bot-pub-key')))
     message = f"{timestamp}{e_body}".encode()
 
     try:

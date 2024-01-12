@@ -8,25 +8,33 @@ valid_stage_games = [{"name": game_info['name'], "value":game_id} for game_id, g
 
 commands = {
     "fgc-rs-github": {
+        "name": "fgc-rs-github",
         "description": "Show FGC-RS-Bot's GitHub page",
+        "type": 1,
         "options": []
     },
     "fgc-rs-ping": {
+        "name": "fgc-rs-ping",
         "description": "Check if bot is online",
+        "type": 1,
         "options": []
     },
     "randomselect": {
-        "description": "Return a randomly selected character/stage from the game in the argument. See the rs.json file in the GitHub repo for supported games",
+        "name": "randomselect",
+        "description": "Return a randomly selected character/stage",
+        "type": 1,
         "dm_permission": False,
         "options": [
             {
                 "type": 1,
                 "name": "characters",
+                "description": "Get a random character",
                 "choices": valid_char_games
             },
             {
                 "type": 1,
                 "name": "stages",
+                "description": "Get a random stage",
                 "choices": valid_stage_games
             }
         ]
