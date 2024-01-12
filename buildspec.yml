@@ -8,11 +8,13 @@ phases:
   build:
     commands:
       - echo Build starting at `date`
-      - pip install --target ./package pynacl
+      - mkdir build
       - cd src/
+      - pip install --target ./ pynacl boto3
+      - zip -r ../build/fgc-rs-bot.zip ./
   post_build:
     commands:
       - echo Build completed at `date`
 artifacts:
   files:
-    - fgc-rs-bot.zip
+    - build/fgc-rs-bot.zip
