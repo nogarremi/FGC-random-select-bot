@@ -19,7 +19,5 @@ phases:
       - echo Build completed at `date`
 artifacts:
   files:
-    - appspec.yml
-    - src/**/*
-  name: fgc-rs-bot-$(date +%Y-%m-%dT%H-%M-%S)
-  discard-paths: yes
+    - **/*
+  base-directory: src
