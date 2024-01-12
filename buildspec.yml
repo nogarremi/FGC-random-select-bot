@@ -1,6 +1,9 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+      python: 3.12.x
   pre_build:
     commands:
       - echo Pre-Build starting at `date`
@@ -11,10 +14,12 @@ phases:
       - mkdir build
       - cd src/
       - pip install --target ./ pynacl boto3
-      - zip -r ../build/fgc-rs-bot.zip ./
   post_build:
     commands:
       - echo Build completed at `date`
 artifacts:
   files:
-    - build/fgc-rs-bot.zip
+    - appspec.yml
+    - src/**/*
+  name: fgc-rs-bot-$(date +%Y-%m-%dT%H-%M-%S)
+  discard-paths: yes
