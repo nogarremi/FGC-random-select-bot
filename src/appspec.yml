@@ -6,6 +6,8 @@
  			"Properties": {
  				"Name": "discord-fgc-rs-bot",
  				"Alias": "latest",
+ 				"CurrentVersion": "1",
+ 				"TargetVersion": "1"
  			}
  		}
  	}]
