@@ -6,8 +6,8 @@
  			"Properties": {
  				"Name": "discord-fgc-rs-bot",
  				"Alias": "deployStart",
- 				"CurrentVersion": "1",
- 				"TargetVersion": "2"
+ 				"CurrentVersion": "%currentVer%",
+ 				"TargetVersion": "%targetVer%"
  			}
  		}
  	}]
