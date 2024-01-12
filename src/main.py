@@ -18,7 +18,7 @@ def get_secret():
     except ClientError as e:
         raise e
 
-    return get_secret_value_response['SecretString']['fgc-rs-bot-pub-key']
+    return json_load(get_secret_value_response['SecretString'])['fgc-rs-bot-pub-key']
 
 def lambda_handler(event, context):
     print(event)
