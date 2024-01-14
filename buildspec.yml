@@ -12,7 +12,7 @@ phases:
     commands:
       - echo Build starting at `date`
       - cd src
-      - aws cloudformation package --template-file template.yml --output-template-file template-out.yml
+      - aws cloudformation package --template-file template.yml --output-template-file template-out.yml --s3-bucket discord-fgc-rs-bot
 artifacts:
   files:
     - template.yml
