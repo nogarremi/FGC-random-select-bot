@@ -16,6 +16,7 @@ phases:
       - cd ../src
       - zip -g ../fgc-rs-bot.zip *
       - cd ..
+      - mv deps/. src/.
   post_build:
     commands:
       - aws lambda update-function-code --region=us-west-2 --function-name discord-fgc-rs-bot --zip-file fileb://fgc-rs-bot.zip
