@@ -4,18 +4,18 @@ phases:
   install:
     runtime-versions:
       python: 3.x
-  pre_build:
     commands:
-      - echo Pre-Build starting at `date`
+      - echo Install starting at `date`
       - pip install --upgrade pip
+      - pip install --target ./deps pynacl boto3 requests
   build:
     commands:
       - echo Build starting at `date`
-      - pip install --target ./deps pynacl boto3 requests
       - cd deps
       - zip -r9 ../fgc-rs-bot.zip .
       - cd ../src
       - zip -g ../fgc-rs-bot.zip *
+      - cd ..
   post_build:
     commands:
       - aws lambda update-function-code --region=us-west-2 --function-name discord-fgc-rs-bot --zip-file fileb://fgc-rs-bot.zip
