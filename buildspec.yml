@@ -7,21 +7,14 @@ phases:
     commands:
       - echo Install starting at `date`
       - pip install --upgrade pip
-      - pip install --target ./deps pynacl boto3 requests
+      - pip install --target ./src pynacl boto3 requests
   build:
     commands:
       - echo Build starting at `date`
-      - cd deps
-      - zip -r9 ../fgc-rs-bot.zip .
-      - cd ../src
-      - zip -g ../fgc-rs-bot.zip *
-      - cd ..
-      - mv deps/. src/.
-  post_build:
-    commands:
-      - aws lambda update-function-code --region=us-west-2 --function-name discord-fgc-rs-bot --zip-file fileb://fgc-rs-bot.zip
-      - echo Build completed at `date`
+      - cd src
+      - aws cloudformation package --template-file template.yml --output-template-file template-out.yml
 artifacts:
   files:
-    - '**/*'
+    - template.yml
+    - template-out.yml
   base-directory: src

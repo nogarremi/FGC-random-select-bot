@@ -1,0 +1,18 @@
+Transform: AWS::Serverless-2016-10-31
+Description: Trigger Lambda Function from API
+Resources:
+  FGCRSBOTLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      Architectures: arm64
+      Role: arn:aws:iam::116659559632:role/service-role/discord-fgc-rs-bot-role-jtczgbxj
+      Handler: fgc_rs_bot.lambda_handler
+      Runtime: python3.12
+      CodeUri: ./
+      MemorySize: 256
+      Events:
+        ApiEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: ANY
