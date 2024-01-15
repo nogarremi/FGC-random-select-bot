@@ -7,7 +7,7 @@ phases:
     commands:
       - echo Install starting at `date`
       - pip install --upgrade pip
-      - pip install --target ./src pynacl
+      - pip install --target ./src pynacl requests
   build:
     commands:
       - echo Build starting at `date`
