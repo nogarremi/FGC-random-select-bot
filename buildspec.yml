@@ -15,6 +15,7 @@ phases:
       - zip -r9 ../fgc-rs-bot.zip .
   post_build:
     commands:
+      - cd ..
       - aws lambda update-function-code --region=us-west-2 --function-name discord-fgc-rs-bot --zip-file fileb://fgc-rs-bot.zip
       - echo Build completed at `date`
 artifacts:
