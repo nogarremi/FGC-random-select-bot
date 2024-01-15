@@ -4,9 +4,6 @@ from os import path as os_path
 from nacl.signing import VerifyKey
 from nacl.exceptions import BadSignatureError
 
-from boto3 import session as boto_session
-from botocore import ClientError
-
 rs_info = json_load(open(os_path.join(os_path.dirname(__file__), 'rs.json')))
 
 valid_char_games = [{"name": game_info['name'], "value":game_id} for game_id, game_info in rs_info.items() if "characters" in game_info]
@@ -47,16 +44,7 @@ commands = {
     }
 }
 
-def get_secret(key):
-    session = boto_session.Session()
-    client = session.client(service_name='secretsmanager', region_name="us-west-2")
-
-    try:
-        get_secret_value_response = client.get_secret_value(SecretId="Discord-FGC-RS-Bot")
-    except Exception as e:
-        raise e
-
-    return json_loads(get_secret_value_response['SecretString'])[key]
+PUBLIC_KEY = '9679ddc48e1a1c27b33c0b41fef42191eeca92a3b48d5f52ed601d55e906e235'
 
 def lambda_handler(event, context):
     print(event)
@@ -88,7 +76,7 @@ def return_format(status_code, body):
     }
 
 def validate(timestamp, signature, e_body):
-    verify_key = VerifyKey(bytes.fromhex(get_secret('fgc-rs-bot-pub-key')))
+    verify_key = VerifyKey(bytes.fromhex(PUBLIC_KEY))
     message = f"{timestamp}{e_body}".encode()
 
     try:
