@@ -9,7 +9,6 @@ PUBLIC_KEY = '9679ddc48e1a1c27b33c0b41fef42191eeca92a3b48d5f52ed601d55e906e235'
 
 def lambda_handler(event, context):
     print(event)
-    print(commands)
     try:
         e_body = event['body']
         body = json_loads(e_body)
@@ -59,9 +58,9 @@ def command_handler(body):
     if command not in commands:
         return return_format(400, 'Bad Request')
     elif command == "fgc-rs-github":
-        return return_format(200, "For more information about FGC-RS-Bot and its commands: <https://github.com/nogarremi/fgc-random-select-bot>")
+        return return_format(200, {'type':4, 'data':{'content':"For more information about FGC-RS-Bot and its commands: <https://github.com/nogarremi/fgc-random-select-bot>"}})
     elif command == "fgc-rs-ping":
-        return return_format(200, "FGC-RS Pong!")
+        return return_format(200, {'type':4, 'data':{'content':"FGC-RS Pong!"}})
     elif command == "randomselect" or "rs":
-        return return_format(200, {'type':1, 'data':{'content':body}})
+        return return_format(200, {'type':4, 'data':{'content':body}})
 
