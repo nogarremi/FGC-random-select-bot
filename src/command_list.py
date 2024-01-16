@@ -50,7 +50,8 @@ commands = {
                 }]
             }
         ]
-    }
+    },
+    "random-select-testing":{"name":"random-select-testing"}
 }
 
 if __name__ == "__main__":
