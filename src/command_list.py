@@ -50,6 +50,38 @@ commands = {
                 }]
             }
         ]
+    },
+    "random-select-testing": {
+        "name": "random-select-testing",
+        "description": "Return a randomly selected character/stage",
+        "type": 1,
+        "dm_permission": False,
+        "options": [
+            {
+                "type": 1,
+                "name": "characters",
+                "description": "Get a random character",
+                "options": [{
+                    "name": "game",
+                    "type": 3,
+                    "description": "Choose a supported game",
+                    "autocomplete": True,
+                    "required": True
+                }]
+            },
+            {
+                "type": 1,
+                "name": "stages",
+                "description": "Get a random stage",
+                "options": [{
+                    "name": "game",
+                    "description": "Choose a supported game",
+                    "type": 3,
+                    "autocomplete": True,
+                    "required": True
+                }]
+            }
+        ]
     }
 }
 
