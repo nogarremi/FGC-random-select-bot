@@ -77,7 +77,7 @@ def command_handler(body):
         data = {'type':4, 'data':{'content':"For more information about FGC-RS-Bot and its commands: <https://github.com/nogarremi/fgc-random-select-bot>"}}
     elif command == "ping":
         data = {'type':4, 'data':{'content':"FGC-RS Pong!"}}
-    elif command == "random-select" or command == "random-select-testing":
+    elif command == "random-select":
         chars_or_stages = body['data']['options'][0]['name']
         game = body['data']['options'][0]['options'][0]['value']
 
@@ -100,7 +100,7 @@ def autocomplete_handler(body):
         return r_format
 
     URL = f'https://discord.com/api/v10/interactions/{interaction_id}/{interaction_token}/callback'
-    if command == "random-select" or command == "random-select-testing":
+    if command == "random-select":
         chars_or_stages = body['data']['options'][0]['name']
         
         game_option_data = body['data']['options'][0]['options'][0]
