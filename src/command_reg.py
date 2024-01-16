@@ -18,5 +18,5 @@ def reg_commands(testing=False):
     print(res.json())
 
 if __name__ == "__main__":
-    reg_commands()
+    reg_commands(True)
 
