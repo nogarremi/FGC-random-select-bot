@@ -49,7 +49,8 @@ def validate(timestamp, signature, e_body):
     try:
         verify_key.verify(message, signature=signature)
     except BadSignatureError:
-        return return_format(401, 'Unauthorized')
+        r_format = return_format(401, 'Unauthorized')
+        return r_format
     return False
 
 def type_check(t, body):
@@ -57,7 +58,10 @@ def type_check(t, body):
         return return_format(200, {'type':1})
     elif t == 2:
         return command_handler(body)
-    return return_format(400, 'Bad Request')
+    elif t == 4:
+        return autocomplete_handler(body)
+    r_format = return_format(400, 'Bad Request')
+    return r_format
 
 def command_handler(body):
     command = body['data']['name']
@@ -65,27 +69,46 @@ def command_handler(body):
     interaction_token = body['token']
 
     if command not in commands:
-        return return_format(400, 'Bad Request')
+        r_format = return_format(400, 'Bad Request')
+        return r_format
     
     URL = f'https://discord.com/api/v10/interactions/{interaction_id}/{interaction_token}/callback'
     if command == "github":
         data = {'type':4, 'data':{'content':"For more information about FGC-RS-Bot and its commands: <https://github.com/nogarremi/fgc-random-select-bot>"}}
     elif command == "ping":
         data = {'type':4, 'data':{'content':"FGC-RS Pong!"}}
-    elif command == "random-select":
+    elif command == "random-select" or command == "random-select-testing":
+        chars_or_stages = body['data']['options'][0]['name']
+        game = body['data']['options'][0]['options'][0]['value']
+
+        data = {'type':4, 'data':{'content':f'Your randomly selected {chars_or_stages[:-1]} for {bold(game.upper())} is: {bold(random_choice(rs_data_getter(chars_or_stages, game)))}'}}
+    else:
+        return return_format(400, 'Bad Request')
+
+    resp = post(URL, json=data)
+    r_format = return_format(200, data)
+    print(r_format)
+    return r_format
+
+def autocomplete_handler(body):
+    command = body['data']['name']
+    interaction_id = body['id']
+    interaction_token = body['token']
+
+    if command not in commands:
+        r_format = return_format(400, 'Bad Request')
+        return r_format
+
+    URL = f'https://discord.com/api/v10/interactions/{interaction_id}/{interaction_token}/callback'
+    if command == "random-select" or command == "random-select-testing":
         chars_or_stages = body['data']['options'][0]['name']
         
         game_option_data = body['data']['options'][0]['options'][0]
-        
+        user_value = game_option_data['value']
+
         if 'focused' in game_option_data and game_option_data['focused']:
-            rs_autocomplete_data = rs_autocomplete(chars_or_stages)
-            print(rs_autocomplete)
+            rs_autocomplete_data = rs_autocomplete(chars_or_stages, user_value)
             data = {'type':8, 'data':{'choices':rs_autocomplete_data}}
-        else:
-            game = game_option_data['value']
-            data = {'type':4, 'data':{'content':f'Your randomly selected {chars_or_stages[:-1]} for {bold(game.upper())} is: {bold(random_choice(rs_data_getter(chars_or_stages, game)))}'}}
-    else:
-        return return_format(400, 'Bad Request')
 
     resp = post(URL, json=data)
     r_format = return_format(200, data)

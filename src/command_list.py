@@ -34,8 +34,7 @@ commands = {
                     "type": 3,
                     "description": "Choose a supported game",
                     "autocomplete": True,
-                    "required": True,
-                    "choices": valid_char_games
+                    "required": True
                 }]
             },
             {
@@ -47,8 +46,7 @@ commands = {
                     "description": "Choose a supported game",
                     "type": 3,
                     "autocomplete": True,
-                    "required": True,
-                    "choices": valid_stage_games
+                    "required": True
                 }]
             }
         ]
