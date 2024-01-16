@@ -15,7 +15,7 @@ def rs_autocomplete(random_type, user_value):
 
     game_list = []
     for item in extract_list:
-        item_value = item.split(' ')[0]
+        item_value = item[0].split(' ')[0]
         for game in games:
             if game['value'].lower() == item_value:
                 game_list.append(game)
