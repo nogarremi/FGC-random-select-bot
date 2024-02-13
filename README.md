@@ -10,17 +10,14 @@ In order to get started, you need to invite FGC Random Select Bot to the discord
 
 ## General commands
 
-`!github`
+`/github`
 Displays the link to the GitHub repository for FGC Random Select Bot
 
-`!help-rs-bot
-Displays a list of all commands.
+`/ping`
+Checks bot's responsiveness
 
-`!nogarremi`
-Ping! Pong!
-
-`!randomselect [character/stage] [game]`
-Returns a randomly selected character or stage from the current the specified game. Assumes SFV if no game is given. Assumes character if character or stage is not specified.
+`/randomselect [characters/stages] [game]`
+Returns a randomly selected character or stage from the current the specified game
 Current games are **3s, footsies, gbvs, mk11, samsho, sfv, strive, t7, uni, xrd, +r**
 Current stages are **llb, t7**
 
