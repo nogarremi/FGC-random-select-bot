@@ -7,7 +7,7 @@
 		"last_updated_version": "FOOTSIES Rollback Edition"
 	},
 	"gbvs": {
-		"name": "Granblue Fantasy Versus: Rising",
+		"name": "Granblue Fantasy Versus",
 		"characters": [
 			"Gran",
 			"Katalina",
@@ -35,6 +35,45 @@
 			"Avatar Belial"
 		],
 		"last_updated_version": "Ver as of 1/9/2022"
+	},
+	"gbvsr": {
+		"name": "Granblue Fantasy Versus: Rising",
+		"characters": [
+			"Gran",
+			"Katalina",
+			"Charlotta",
+			"Lancelot",
+			"Ferry",
+			"Lowain",
+			"Ladiva",
+			"Percival",
+			"Metera",
+			"Zeta",
+			"Vaseraga",
+			"Beelzebub",
+			"Narmaya",
+			"Soriz",
+			"Djeeta",
+			"Zooey",
+			"Belial",
+			"Cagliostro",
+			"Yuel",
+			"Anre",	
+			"Eustace",
+			"Seox",
+			"Vira",
+			"Avatar Belial",
+			"Anila",
+			"Grimnir",
+			"Lucilius",
+			"Nier",
+			"Siegfried",
+			"Lucilius",
+			"2B",
+			"Vane",
+			"Beatrix"
+		],
+		"last_updated_version": "Ver as of 5/28/2024"
 	},
 	"mbtl": {
 		"name": "Melty Blood: Type Lumina",
@@ -91,6 +130,60 @@
 			"Room 21"
 		],
 		"last_updated_version": "1.26"
+	},
+	"mk1": {
+		"name": "Mortal Kombat 1",
+		"characters": [
+			"Liu Kang",
+			"Sub-Zero",
+			"Scorpion",
+			"Kitana",
+			"Johnny Cage",
+			"Kenshi Takahashi",
+			"Kung Lao",
+			"Mileena",
+			"Raiden",
+			"Rain",
+			"Smoke",
+			"Li Mei",
+			"Baraka",
+			"Tanya",
+			"Geras",
+			"Reptile",
+			"Havik",
+			"Ashrah",
+			"Sindel",
+			"General Shao",
+			"Nitara",
+			"Shang Tsung",
+			"Reiko",
+			"Omni-Man",
+			"Quan Chi",
+			"Peacemaker",
+			"Ermac"
+		],
+		"kameos": [
+			"Sub-Zero",
+			"Shujinko",
+			"Scorpion",
+			"Motaro",
+			"Kung Lao",
+			"Cyrax",
+			"Frost",
+			"Goro",
+			"Jax",
+			"Kano",
+			"Darrius",
+			"Sareena",
+			"Sektor",
+			"Sonya",
+			"Stryker",
+			"Tremor",
+			"Khameleon",
+			"Janet Cage",
+			"Mavado"
+		],
+		"last_updated_version": "Ver as of 5/28/2024"
 	},
 	"mk11": {
 		"name": "Mortal Kombat 11",
@@ -245,9 +338,11 @@
 			"Lily",
 			"Cammy",
 			"Rashid",
-			"A.K.I"
+			"A.K.I",
+			"Ed",
+			"Akuma (Gouki)"
 		],
-		"last_updated_version": "Fall 2023"
+		"last_updated_version": "Ver as of 5/28/2024"
 	},
 	"strive": {
 		"name": "Guilty Gear STRIVE",
@@ -276,9 +371,12 @@
 			"Sin Kiske",
 			"Bedman?",
 			"Asuka R#",
-			"Johnny"
+			"Johnny",
+			"Elphelt Valentine",
+			"A.B.A",
+			"Slayer"
 		],
-		"last_updated_version": "Version as of 10/4/2023"
+		"last_updated_version": "Ver as of 5/28/2024"
 	},
 	"t7": {
 		"name": "Tekken 7",
@@ -365,6 +463,63 @@
 		],
 		"last_updated_version": "Season 4 patch 4.1.0"
 	},
+	"t8": {
+		"name": "Tekken 8",
+		"characters": [
+			"Alisa",
+			"Asuka",
+			"Azucena",
+			"Bryan",
+			"Claudio",
+			"Devil Jin",
+			"Dragunov",
+			"Eddy",
+			"Feng",
+			"Hwoarang",
+			"Jack-8",
+			"Jin",
+			"Jun",
+			"Kazuya",
+			"King",
+			"Kuma",
+			"Lars",
+			"Law",
+			"Lee",
+			"Leo",
+			"Leroy",
+			"Lidia",
+			"Lili",
+			"Nina",
+			"Paul",
+			"Raven",
+			"Reina",
+			"Shaheen",
+			"Steve",
+			"Victor",
+			"Xiaoyu",
+			"Yoshimitsu",
+			"Zafina"			
+		],
+		"stages": [
+			"Arena",
+			"Arena (Underground",
+			"Urban Square",
+			"Urban Square (Evening",
+			"Yakushima",
+			"Coliseum of Fate",
+			"Rebel Hangar",
+			"Fallen Destiny",
+			"Descent into Subconsciousness",
+			"Sanctum",
+			"Into the Stratosphere",
+			"Ortiz Farm",
+			"Celebration on the Seine",
+			"Secluded Training Ground",
+			"Elegant Palace",
+			"Midnight Siege"
+		],
+		"last_updated_version": "Ver as of 5/28/2024"
+	},
 	"uniclr": {
 		"name": "Under Night In-Birth Exe:Late[clr]",
 		"characters": [
@@ -387,6 +542,35 @@
 			"Yuzuriha"
 		],
 		"last_updated_version": "N/A"
+	},
+	"uni2": {
+		"name": "Under Night In-Birth II Sys:Celes",
+		"characters": [
+			"Akatsuki",
+			"Byakuya",
+			"Carmine",
+			"Chaos",
+			"Eltnum",
+			"Enkidu",
+			"Gordeau",
+			"Hilda",
+			"Hyde",
+			"Kaguya",
+			"Kuon",
+			"Linne",
+			"Londrekia",
+			"Merkava",
+			"Mika",
+			"Nanase",
+			"Orie",
+			"Phonon",
+			"Seth",
+			"Tsurugi",
+			"Vatista",
+			"Waldstein",
+			"Yuzuriha"
+		],
+		"last_updated_version": "Ver as of 5/28/2024"
 	},
 	"xrd": {
 		"name": "Guilty Gear Xrd Rev 2",
