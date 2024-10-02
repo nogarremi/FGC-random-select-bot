@@ -81,7 +81,7 @@ def command_handler(body):
         chars_or_stages = body['data']['options'][0]['name']
         game = body['data']['options'][0]['options'][0]['value']
 
-        data = {'type':4, 'data':{'content':f'Your randomly selected {chars_or_stages[:-1]} for {bold(game.upper())} is: {bold(random_choice(rs_data_getter(chars_or_stages, game)))}{". Your random Kameo is: " + bold(random_choice(rs_data_getter("kameos", game) if game == "mk1" else ""))}'}}
+        data = {'type':4, 'data':{'content':f'Your randomly selected {chars_or_stages[:-1]} for {bold(game.upper())} is: {bold(random_choice(rs_data_getter(chars_or_stages, game)))}{". Your random Kameo is: " + bold(random_choice(rs_data_getter("kameos", game))) if game == "mk1" else ""}'}}
     else:
         return return_format(400, 'Bad Request')
 
