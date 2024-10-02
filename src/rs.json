@@ -71,9 +71,12 @@
 			"Lucilius",
 			"2B",
 			"Vane",
-			"Beatrix"
+			"Beatrix",
+			"Versusia",
+			"Vikala",
+			"Sandalphon"
 		],
-		"last_updated_version": "Ver as of 5/28/2024"
+		"last_updated_version": "Ver as of 10/2/2024, including announced but unreleased characters"
 	},
 	"mbtl": {
 		"name": "Melty Blood: Type Lumina",
@@ -160,7 +163,15 @@
 			"Omni-Man",
 			"Quan Chi",
 			"Peacemaker",
-			"Ermac"
+			"Ermac",
+			"Homelander",
+			"Takeda",
+			"Sektor",
+			"Cyrax",
+			"Noob Saibot",
+			"Conan the Barbarian",
+			"T-1000",
+			"Ghostface"
 		],
 		"kameos": [
 			"Sub-Zero",
@@ -181,9 +192,10 @@
 			"Tremor",
 			"Khameleon",
 			"Janet Cage",
-			"Mavado"
+			"Mavado",
+			"Ferra"
 		],
-		"last_updated_version": "Ver as of 5/28/2024"
+		"last_updated_version": "Ver as of 10/2/2024, including announced but unreleased characters"
 	},
 	"mk11": {
 		"name": "Mortal Kombat 11",
@@ -340,9 +352,13 @@
 			"Rashid",
 			"A.K.I",
 			"Ed",
-			"Akuma (Gouki)"
+			"Akuma (Gouki)",
+			"M. Bison (Dictator)",
+			"Terry",
+			"Mai",
+			"Elena"
 		],
-		"last_updated_version": "Ver as of 5/28/2024"
+		"last_updated_version": "Ver as of 10/2/2024, including announced but unreleased characters"
 	},
 	"strive": {
 		"name": "Guilty Gear STRIVE",
@@ -374,9 +390,13 @@
 			"Johnny",
 			"Elphelt Valentine",
 			"A.B.A",
-			"Slayer"
+			"Slayer",
+			"Queen Dizzy",
+			"Venom",
+			"Unika",
+			"Lucy"
 		],
-		"last_updated_version": "Ver as of 5/28/2024"
+		"last_updated_version": "Ver as of 10/2/2024, including announced but unreleased characters"
 	},
 	"t7": {
 		"name": "Tekken 7",
@@ -475,6 +495,7 @@
 			"Dragunov",
 			"Eddy",
 			"Feng",
+			"Heihachi",
 			"Hwoarang",
 			"Jack-8",
 			"Jin",
@@ -518,7 +539,7 @@
 			"Elegant Palace",
 			"Midnight Siege"
 		],
-		"last_updated_version": "Ver as of 5/28/2024"
+		"last_updated_version": "Ver as of 10/2/2024, including announced but unreleased characters"
 	},
 	"uniclr": {
 		"name": "Under Night In-Birth Exe:Late[clr]",
@@ -555,6 +576,7 @@
 			"Gordeau",
 			"Hilda",
 			"Hyde",
+			"Izumi",
 			"Kaguya",
 			"Kuon",
 			"Linne",
@@ -562,15 +584,17 @@
 			"Merkava",
 			"Mika",
 			"Nanase",
+			"Ogre",
 			"Orie",
 			"Phonon",
 			"Seth",
 			"Tsurugi",
+			"Uzuki",
 			"Vatista",
 			"Waldstein",
 			"Yuzuriha"
 		],
-		"last_updated_version": "Ver as of 5/28/2024"
+		"last_updated_version": "Ver as of 10/2/2024, including announced but unreleased characters"
 	},
 	"xrd": {
 		"name": "Guilty Gear Xrd Rev 2",
