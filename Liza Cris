@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Jardim Secreto de Luna</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #fce4ec, #e1f5fe);
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #5c6bc0;
+    }
+    p {
+      text-align: justify;
+      line-height: 1.6;
+    }
+    .illustration {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>O Jardim Secreto de Luna</h1>
+    <p>Era fim de tarde, e o céu tinha a cor do pêssego maduro. Luna, com quatro anos, entrava correndo no quarto, os pezinhos descalços batendo no chão de madeira. A mãe já estava preparando a banheira, cheia de espuma e brinquedos coloridos flutuando como barquinhos em festa.</p><p>- Vem, pequena jardineira - disse mamãe, com um sorriso - Hora de cuidar do seu jardim secreto.</p>
+
+<p>Luna parou e olhou curiosa.</p>
+
+<p>- Jardim? Mas não tem flor nenhuma em mim, mamãe...</p>
+
+<p>Mamãe se abaixou, olhou nos olhos da filha e ajeitou delicadamente uma mecha do cabelo dela.</p>
+
+<p>- Ah, tem sim, meu amor. Cada criança tem um jardim só seu. Ele não é feito de rosas nem margaridas, mas de partes muito especiais do corpo que ficam escondidinhas debaixo da roupa. Essas partes são protegidas como flores raras. Você sabia?</p>
+
+<div class="illustration">
+  <img src="ilustracao_banheira.jpg" alt="Mãe e filha no banheiro com brinquedos na banheira">
+</div>
+
+<p>Luna arregalou os olhos.</p>
+
+<p>- Como assim?</p>
+
+<p>- É como num jardim de verdade - explicou a mãe, colocando a menina na água morna. - A gente cuida com carinho, rega com atenção, e não deixa ninguém pisar nas flores. Algumas flores, a gente só mostra para o sol... ou para a mamãe na hora do banho, para lavar direitinho.</p>
+
+<p>Luna sorriu, relaxando na banheira. Ela gostava quando a mamãe falava como se tudo fosse mágico.</p>
+
+<p>- E ninguém mais pode ver o meu jardim?</p>
+
+<p>- Só quando for mesmo necessário e só com a sua permissão, como quando a mamãe ajuda a secar, ou o médico examina, mas sempre com você sabendo o que está acontecendo. E se alguém quiser olhar ou tocar sem você querer, o que você faz?</p>
+
+<p>Luna fez uma carinha de brava.</p>
+
+<p>- Digo "não gostei!" bem alto! E conto pra você!</p>
+
+<p>Mamãe sorriu, satisfeita.</p>
+
+<p>- Isso mesmo, pequena jardineira. Seu corpo é seu mundo, e você é a guardiã. E a mamãe sempre vai estar por perto pra te ajudar a proteger ele.</p>
+
+<p>Depois do banho, Luna já de pijama, sentou-se no colo da mãe para escutar uma história. A mãe acariciava os cabelos dela com delicadeza.</p>
+
+<p>- Mamãe?</p>
+<p>- Sim, meu amor?</p>
+
+<p>- E se alguém me oferecer segredo sobre meu jardim?</p>
+
+<p>A mãe parou, segurando o queixo da filha com doçura para olhá-la nos olhos.</p>
+
+<p>- Nenhum segredo é mais importante do que a sua segurança. Se alguém pedir para guardar um segredo que faz você se sentir confusa ou triste, você pode contar para mim. Segredo bom não dá medo. E o seu jardim merece paz, sol e alegria.</p>
+
+<p>Luna encostou a cabeça no peito da mãe.</p>
+
+<p>- Então vou contar tudo pra você. Sempre.</p>
+
+<p>A mãe beijou o topo da cabeça dela.</p>
+
+<p>- Sempre, minha flor. Porque aqui, no meu abraço, o seu jardim sempre vai estar seguro.</p>
+
+<p>E com a brisa entrando pela janela e um cheirinho de lavanda no ar, Luna adormeceu. Sonhando com um jardim cheio de borboletas, onde ninguém entrava sem bater.</p>
+
+  </div>
+</body>
+</html>
