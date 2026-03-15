@@ -74,9 +74,13 @@
 			"Beatrix",
 			"Versusia",
 			"Vikala",
-			"Sandalphon"
+			"Sandalphon",
+			"Galleon",
+			"Wilnas",
+			"Meg",
+			"Ilsa"
 		],
-		"last_updated_version": "Ver as of 10/2/2024, including announced but unreleased characters"
+		"last_updated_version": "Ver as of 2/23/2026"
 	},
 	"mbtl": {
 		"name": "Melty Blood: Type Lumina",
@@ -276,6 +280,41 @@
 		],
 		"last_updated_version": "Ver as of 05/29/2023"
 	},
+	"scvi": {
+		"name": "Soulcalibur VI",
+		"characters": [
+			"2B",
+			"Amy",
+			"Astaroth",
+			"Azwel",
+			"Cassandra",
+			"Cervantes",
+			"Geralt",
+			"Groh",
+			"Haohmaru",
+			"Hilde",
+			"Hwang",
+			"Ivy",
+			"Kilik",
+			"Maxi",
+			"Mitsurugi",
+			"Nightmare",
+			"Raphael",
+			"Seong Mi-na",
+			"Setsuka",
+			"Siegfried",
+			"Sophitia",
+			"Taki",
+			"Talim",
+			"Tira",
+			"Voldo",
+			"Xianghua",
+			"Yoshimitsu",
+			"Zasalamel",
+			"Inferno"
+		],
+		"last_updated_version": "2/23/2026"
+	}
 	"sfv": {
 		"name": "Street Fighter V",
 		"characters": [
@@ -356,9 +395,13 @@
 			"M. Bison (Dictator)",
 			"Terry",
 			"Mai",
-			"Elena"
+			"Elena",
+			"Sagat",
+			"C.Viper",
+			"Alex",
+			"Ingrid"
 		],
-		"last_updated_version": "Ver as of 10/2/2024, including announced but unreleased characters"
+		"last_updated_version": "Ver as of 2/23/2026, including announced but unreleased characters"
 	},
 	"strive": {
 		"name": "Guilty Gear STRIVE",
@@ -487,13 +530,17 @@
 		"name": "Tekken 8",
 		"characters": [
 			"Alisa",
+			"Anna",
+			"Armor King",
 			"Asuka",
 			"Azucena",
 			"Bryan",
 			"Claudio",
+			"Clive",
 			"Devil Jin",
 			"Dragunov",
 			"Eddy",
+			"Fahkumram",
 			"Feng",
 			"Heihachi",
 			"Hwoarang",
@@ -510,6 +557,7 @@
 			"Leroy",
 			"Lidia",
 			"Lili",
+			"Miary Zo",
 			"Nina",
 			"Paul",
 			"Raven",
@@ -523,9 +571,9 @@
 		],
 		"stages": [
 			"Arena",
-			"Arena (Underground",
+			"Arena (Underground)",
 			"Urban Square",
-			"Urban Square (Evening",
+			"Urban Square (Evening)",
 			"Yakushima",
 			"Coliseum of Fate",
 			"Rebel Hangar",
@@ -537,9 +585,13 @@
 			"Celebration on the Seine",
 			"Secluded Training Ground",
 			"Elegant Palace",
-			"Midnight Siege"
+			"Midnight Siege",
+			"Seaside Resort",
+			"Genmaji Temple",
+			"Genmaji Temple (Daytime)",
+			"Phoenix Gate"
 		],
-		"last_updated_version": "Ver as of 10/2/2024, including announced but unreleased characters"
+		"last_updated_version": "Ver as of 2/23/2026"
 	},
 	"uniclr": {
 		"name": "Under Night In-Birth Exe:Late[clr]",
