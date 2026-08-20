@@ -1,4 +1,22 @@
 {
+	"avatar": {
+		"name": "Avatar Legends: The Fighting Game",
+		"characters": [
+			"Aang",
+			"Avatar Aang",
+			"Azula",
+			"Katara",
+			"Korra",
+			"Kyoshi",
+			"Nightmare Korra",
+			"Ozai",
+			"Sokka",
+			"Toph",
+			"Zaheer",
+			"Zuko"
+		],
+		"last_updated_version": "Initial release"
+	},
 	"footsies": {
 		"name": "Footsies",
 		"characters": [
@@ -28,7 +46,7 @@
 			"Belial",
 			"Cagliostro",
 			"Yuel",
-			"Anre",	
+			"Anre",
 			"Eustace",
 			"Seox",
 			"Vira",
@@ -58,7 +76,7 @@
 			"Belial",
 			"Cagliostro",
 			"Yuel",
-			"Anre",	
+			"Anre",
 			"Eustace",
 			"Seox",
 			"Vira",
@@ -128,7 +146,7 @@
 			"Outskirts",
 			"The Sewers",
 			"Scrap Desert",
-			"New Rise District", 
+			"New Rise District",
 			"Workbot Factory",
 			"The Subways",
 			"Paradise Field ",
@@ -314,7 +332,7 @@
 			"Inferno"
 		],
 		"last_updated_version": "2/23/2026"
-	}
+	},
 	"sfv": {
 		"name": "Street Fighter V",
 		"characters": [
@@ -399,9 +417,13 @@
 			"Sagat",
 			"C.Viper",
 			"Alex",
-			"Ingrid"
+			"Ingrid",
+			"Yasmine",
+			"Arjun",
+			"Bosch",
+			"Tifa"
 		],
-		"last_updated_version": "Ver as of 2/23/2026, including announced but unreleased characters"
+		"last_updated_version": "Ver as of 8/20/2026, including announced but unreleased characters"
 	},
 	"strive": {
 		"name": "Guilty Gear STRIVE",
@@ -437,9 +459,11 @@
 			"Queen Dizzy",
 			"Venom",
 			"Unika",
-			"Lucy"
+			"Lucy",
+			"Jam Kuradoberi",
+			"Robo-Ky"
 		],
-		"last_updated_version": "Ver as of 10/2/2024, including announced but unreleased characters"
+		"last_updated_version": "Ver as of 8/20/2026"
 	},
 	"t7": {
 		"name": "Tekken 7",
@@ -448,7 +472,7 @@
 			"Alisa",
 			"Anna",
 			"Armor King",
-			"Asuka",	
+			"Asuka",
 			"Bob",
 			"Bryan",
 			"Claudio",
@@ -534,6 +558,7 @@
 			"Armor King",
 			"Asuka",
 			"Azucena",
+			"Bob",
 			"Bryan",
 			"Claudio",
 			"Clive",
@@ -550,6 +575,7 @@
 			"Kazuya",
 			"King",
 			"Kuma",
+			"Kunimitsu",
 			"Lars",
 			"Law",
 			"Lee",
@@ -562,12 +588,13 @@
 			"Paul",
 			"Raven",
 			"Reina",
+			"Roger Jr.",
 			"Shaheen",
 			"Steve",
 			"Victor",
 			"Xiaoyu",
 			"Yoshimitsu",
-			"Zafina"			
+			"Zafina"
 		],
 		"stages": [
 			"Arena",
@@ -589,9 +616,49 @@
 			"Seaside Resort",
 			"Genmaji Temple",
 			"Genmaji Temple (Daytime)",
-			"Phoenix Gate"
+			"Phoenix Gate",
+			"Babobab Horizon",
+			"Pac-Pixels",
+			"Subsea Lockdown"
 		],
-		"last_updated_version": "Ver as of 2/23/2026"
+		"last_updated_version": "Ver as of 8/20/2026, including announced but unreleased characters"
+	},
+	"tokon": {
+		"name": "Marvel Tokon Fighting Souls",
+		"characters": [
+			"Captain America",
+			"Iron Man",
+			"Hulk",
+			"Black Panther",
+			"Storm",
+			"Magik",
+			"Wolverine",
+			"Danger",
+			"Spider-Man",
+			"Ms. Marvel",
+			"Star-Lord",
+			"Peni Parker",
+			"Ghost Rider",
+			"Blade",
+			"Loki",
+			"Deadpool",
+			"Doctor Doom",
+			"Magneto",
+			"Green Goblin",
+			"Carnage",
+			"Champion"
+		],
+		"stages": [
+			"Asgard",
+			"Champion's Arena",
+			"Knowhere",
+			"New York (Day)",
+			"New York (Night)",
+			"Savage Land",
+			"Wakanda",
+			"X-Mansion"
+		],
+		"last_updated_version": "Initial release"
 	},
 	"uniclr": {
 		"name": "Under Night In-Birth Exe:Late[clr]",
@@ -736,4 +803,3 @@
 		"last_updated_version": "N/A"
 	}
 }
-
